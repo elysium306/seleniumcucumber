@@ -22,7 +22,7 @@ public class AmazonLogin {
 	    Driver.getDriver().get(PropertiesReader.getProperty("amazonURL"));
 	}
 
-	@And("Sign in button is displayed")
+	@Then("Sign in button is displayed")
 	public void sign_in_button_is_displayed() {
 	    Assert.assertTrue(amazonpage.signinSecurelyBtn.isDisplayed());
 	}
