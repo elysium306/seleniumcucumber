@@ -55,5 +55,13 @@ public class BrowserUtils {
 			element.sendKeys(Keys.BACK_SPACE);
 		}
 	}
-
+	
+	public boolean isElementPresent(WebElement element) {
+		try {
+			element.isDisplayed();
+		} catch(NoSuchElementException e) {
+			return false;
+		}
+		return true;
+	}
 }

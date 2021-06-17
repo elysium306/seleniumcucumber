@@ -68,7 +68,7 @@ public class AmazonLogin {
 	
 	@But("The password field should not display")
 	public void the_password_field_should_not_display() {
-	    Assert.assertFalse(amazonpage.signInPasswordField.isDisplayed());
+	    Assert.assertFalse(utils.isElementPresent(amazonpage.signInPasswordField));
 	}
 
 	
