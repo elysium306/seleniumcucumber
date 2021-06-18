@@ -1,0 +1,432 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-18T01:56:51.751Z",
+        "line": 36,
+        "name": "As a user, I should be able to search different items",
+        "description": "",
+        "id": "amazon-login;as-a-user--i-should-be-able-to-search-different-items;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2047021000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I am on the amazon homepage",
+            "match": {
+              "location": "step_definitions.AmazonLogin.i_am_on_the_amazon_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 694713000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I enter the search term \"coffee mug\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"coffee mug\"",
+                  "offset": 24
+                }
+              ],
+              "location": "step_definitions.AmazonLogin.i_enter_the_search_term(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2515660000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I click on search button",
+            "match": {
+              "location": "step_definitions.AmazonLogin.i_click_on_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 101642000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I should see the search item \"coffee mug\" on search result page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"coffee mug\"",
+                  "offset": 29
+                }
+              ],
+              "location": "step_definitions.AmazonLogin.i_should_see_the_search_item_on_search_result_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@SearchTest"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-18T01:56:57.153Z",
+        "line": 37,
+        "name": "As a user, I should be able to search different items",
+        "description": "",
+        "id": "amazon-login;as-a-user--i-should-be-able-to-search-different-items;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 882511000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I am on the amazon homepage",
+            "match": {
+              "location": "step_definitions.AmazonLogin.i_am_on_the_amazon_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 261792000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I enter the search term \"pretty coffee mug\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"pretty coffee mug\"",
+                  "offset": 24
+                }
+              ],
+              "location": "step_definitions.AmazonLogin.i_enter_the_search_term(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1488873000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I click on search button",
+            "match": {
+              "location": "step_definitions.AmazonLogin.i_click_on_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59641000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I should see the search item \"pretty coffee mug\" on search result page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"pretty coffee mug\"",
+                  "offset": 29
+                }
+              ],
+              "location": "step_definitions.AmazonLogin.i_should_see_the_search_item_on_search_result_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@SearchTest"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-18T01:56:59.852Z",
+        "line": 38,
+        "name": "As a user, I should be able to search different items",
+        "description": "",
+        "id": "amazon-login;as-a-user--i-should-be-able-to-search-different-items;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 957139000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I am on the amazon homepage",
+            "match": {
+              "location": "step_definitions.AmazonLogin.i_am_on_the_amazon_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 240640000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I enter the search term \"cool coffee mug\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"cool coffee mug\"",
+                  "offset": 24
+                }
+              ],
+              "location": "step_definitions.AmazonLogin.i_enter_the_search_term(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1769422000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I click on search button",
+            "match": {
+              "location": "step_definitions.AmazonLogin.i_click_on_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53861000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I should see the search item \"cool coffee mug\" on search result page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"cool coffee mug\"",
+                  "offset": 29
+                }
+              ],
+              "location": "step_definitions.AmazonLogin.i_should_see_the_search_item_on_search_result_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@SearchTest"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-18T01:57:02.878Z",
+        "line": 39,
+        "name": "As a user, I should be able to search different items",
+        "description": "",
+        "id": "amazon-login;as-a-user--i-should-be-able-to-search-different-items;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1129514000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I am on the amazon homepage",
+            "match": {
+              "location": "step_definitions.AmazonLogin.i_am_on_the_amazon_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 107232000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I enter the search term \"ugly coffee mug\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ugly coffee mug\"",
+                  "offset": 24
+                }
+              ],
+              "location": "step_definitions.AmazonLogin.i_enter_the_search_term(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1749074000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I click on search button",
+            "match": {
+              "location": "step_definitions.AmazonLogin.i_click_on_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51952000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I should see the search item \"ugly coffee mug\" on search result page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ugly coffee mug\"",
+                  "offset": 29
+                }
+              ],
+              "location": "step_definitions.AmazonLogin.i_should_see_the_search_item_on_search_result_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@SearchTest"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-18T01:57:05.921Z",
+        "line": 40,
+        "name": "As a user, I should be able to search different items",
+        "description": "",
+        "id": "amazon-login;as-a-user--i-should-be-able-to-search-different-items;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1655683000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I am on the amazon homepage",
+            "match": {
+              "location": "step_definitions.AmazonLogin.i_am_on_the_amazon_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 283660000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I enter the search term \"cute coffee mug\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"cute coffee mug\"",
+                  "offset": 24
+                }
+              ],
+              "location": "step_definitions.AmazonLogin.i_enter_the_search_term(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1655546000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I click on search button",
+            "match": {
+              "location": "step_definitions.AmazonLogin.i_click_on_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 99555000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I should see the search item \"cute coffee mug\" on search result page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"cute coffee mug\"",
+                  "offset": 29
+                }
+              ],
+              "location": "step_definitions.AmazonLogin.i_should_see_the_search_item_on_search_result_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@SearchTest"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Amazon login",
+    "description": "  User should be able to login and logout using Amazon login feature",
+    "id": "amazon-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/amazonLogin.feature",
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
