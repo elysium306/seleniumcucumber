@@ -40,5 +40,18 @@ public class SauceDemoLogin {
 		int actualSize = page.itemTitles.size();
 		Assert.assertTrue(actualSize == int1);
 	}
+	
+	// invalid test steps 
+	
+	@Then("I should not be in the home page")
+	public void i_should_not_be_in_the_home_page() {
+	    Assert.assertFalse(utils.isElementPresent(page.HomePageInventoryContainner));
+	}
+	
+	@Then("There should an error message {string}")
+	public void there_should_an_error_message(String expectedErrorMessage) {
+	  String actualErrorMessage = page.loginErrorMessage.getText();
+	  Assert.assertEquals(actualErrorMessage, expectedErrorMessage);
+	}
 
 }

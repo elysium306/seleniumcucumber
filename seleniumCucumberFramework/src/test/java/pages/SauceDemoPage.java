@@ -29,4 +29,7 @@ public class SauceDemoPage {
 	@FindBy(xpath = "//div[@class='inventory_item_name']")
 	public List<WebElement> itemTitles;
 	
+	@FindBy(xpath = "//h3[@data-test='error']")
+	public WebElement loginErrorMessage;
+	
 }
