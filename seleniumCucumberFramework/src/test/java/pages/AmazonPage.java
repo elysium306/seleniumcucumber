@@ -10,6 +10,15 @@ public class AmazonPage {
 	public AmazonPage() {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
+	
+	@FindBy(id = "twotabsearchtextbox")
+	public WebElement searchInputField;
+	
+	@FindBy(id = "nav-search-submit-button")
+	public WebElement searchButton;
+	
+	@FindBy(xpath = "//span[@class='a-color-state a-text-bold']")
+	public WebElement searchResultText;
 
 	@FindBy (linkText = "Sign in securely")
 	public WebElement signinSecurelyBtn;

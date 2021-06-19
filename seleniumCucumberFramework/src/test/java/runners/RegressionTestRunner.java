@@ -6,15 +6,11 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		plugin = {"pretty", "html:Reports/htmlReport.html",
-		"json:Reports/jsonReport.json"},
 		features="./src/test/resources/features",
 		glue="step_definitions",
 		dryRun=false,
-		tags="@SearchTest"
+		tags="@Regression"
 		)
-public class TestRunner {
-	
-	//dryRun = we are telling to cucumber to run only the scenario steps, not the implementation
+public class RegressionTestRunner {
 
 }

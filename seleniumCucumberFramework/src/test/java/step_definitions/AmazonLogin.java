@@ -72,5 +72,24 @@ public class AmazonLogin {
 	}
 
 	
+	// amazon search tests 
+	
+	@When("I enter the search term {string}")
+	public void i_enter_the_search_term(String item) {
+		amazonpage.searchInputField.sendKeys(item);
+	}
+	@When("I click on search button")
+	public void i_click_on_search_button() { // "coffee mug"
+	   amazonpage.searchButton.click();
+	}
+	@Then("I should see the search item {string} on search result page")
+	public void i_should_see_the_search_item_on_search_result_page(String item) {
+	   utils.waitUntilElementVisible(amazonpage.searchResultText);
+	   String searchResultText = amazonpage.searchResultText.getText();
+	   String actualResultText = searchResultText.substring(1, searchResultText.length()-1);
+	   
+	   Assert.assertEquals(actualResultText, item);
+	}
+	
 
 }
