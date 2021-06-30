@@ -8,7 +8,6 @@ public class PropertiesReader {
 	
 private static Properties config;
 
-	
 	static {
 		
 		try {
@@ -26,5 +25,4 @@ private static Properties config;
 		return config.getProperty(key);
 	}
 	
-
 }
