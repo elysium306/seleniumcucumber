@@ -56,4 +56,9 @@ public class BrowserUtils {
 		}
 	}
 
+	public boolean isElementPresent(WebElement homePageInventoryContainner) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }

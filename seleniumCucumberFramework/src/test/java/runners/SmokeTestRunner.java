@@ -11,10 +11,8 @@ import io.cucumber.junit.CucumberOptions;
 		features="./src/test/resources/features",
 		glue="step_definitions",
 		dryRun=false,
-		tags="@SauceInvalidLogin"
+		tags="@SmokeTest"
 		)
-public class TestRunner {
-	
-	//dryRun = we are telling to cucumber to run only the scenario steps, not the implementation
+public class SmokeTestRunner {
 
 }
