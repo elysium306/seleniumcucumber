@@ -32,8 +32,4 @@ public class SauceDemoPage {
 	@FindBy(xpath = "//h3[@data-test='error']")
 	public WebElement loginErrorMessage;
 	
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> c33237d5d93a1b22677ef803f75c38a3843b69f5

@@ -2,7 +2,6 @@ package utilities;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -45,7 +44,7 @@ public class BrowserUtils {
 		letswait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
-	public void selectByVisibleText(WebElement element, String optionToSelect) {
+	public static void selectByVisibleText(WebElement element, String optionToSelect) {
 		letsSelect = new Select(element);
 		letsSelect.selectByVisibleText(optionToSelect);
 	}
@@ -56,22 +55,10 @@ public class BrowserUtils {
 			element.sendKeys(Keys.BACK_SPACE);
 		}
 	}
-<<<<<<< HEAD
-	
-	public boolean isElementPresent(WebElement element) {
-		try {
-			element.isDisplayed();
-		} catch(NoSuchElementException e) {
-			return false;
-		}
-		return true;
-	}
-=======
 
 	public boolean isElementPresent(WebElement homePageInventoryContainner) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
->>>>>>> c33237d5d93a1b22677ef803f75c38a3843b69f5
 }

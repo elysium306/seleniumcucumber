@@ -15,4 +15,8 @@ import io.cucumber.junit.CucumberOptions;
 		)
 public class RegressionTestRunner {
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c33237d5d93a1b22677ef803f75c38a3843b69f5

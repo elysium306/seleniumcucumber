@@ -1,9 +1,6 @@
 package pages;
 
-<<<<<<< HEAD
-=======
 
->>>>>>> c33237d5d93a1b22677ef803f75c38a3843b69f5
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
@@ -51,12 +48,6 @@ public class TradeAppPage {
 	@FindBy(xpath = "//button[text()='Save']")
 	public WebElement addTradeSaveBtn;
 	
-<<<<<<< HEAD
-	@FindBy(xpath = "//table[@class='table table-bordered table-striped']/tbody/tr/td[2]")
-	public List<WebElement> anyRowStockSymbol;
-
-}
-=======
 	@FindBy (xpath= "//button[text()='Search']")
 	public WebElement searchButton;
 	
@@ -70,4 +61,3 @@ public class TradeAppPage {
 	public List<WebElement> searchTableFirstRow;
 
 }
->>>>>>> c33237d5d93a1b22677ef803f75c38a3843b69f5
