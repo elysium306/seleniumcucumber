@@ -1,0 +1,667 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3123019900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the login page",
+            "match": {
+              "location": "step_definitions.SauceDemoLogin.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T04:47:47.300Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5091027900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Login Valid test",
+        "description": "",
+        "id": "sauce-demo-login-tests;login-valid-test",
+        "after": [
+          {
+            "result": {
+              "duration": 1145597500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 233526600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 46
+                }
+              ],
+              "location": "step_definitions.SauceDemoLogin.i_enter_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 150951700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on the login button",
+            "match": {
+              "location": "step_definitions.SauceDemoLogin.i_click_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 143954600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should be in the home page",
+            "match": {
+              "location": "step_definitions.SauceDemoLogin.i_should_be_in_the_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 18995500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "There should be 6 items in the home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 16
+                }
+              ],
+              "location": "step_definitions.SauceDemoLogin.there_should_be_items_in_the_home_page(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@SauceValidLogin"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1531409400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the login page",
+            "match": {
+              "location": "step_definitions.SauceDemoLogin.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T04:47:57.313Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1578331500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Login Invalid test",
+        "description": "",
+        "id": "sauce-demo-login-tests;login-invalid-test",
+        "after": [
+          {
+            "result": {
+              "duration": 1049260400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 263917500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I enter username \"standard_user\" and password \"secret_invalid\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"secret_invalid\"",
+                  "offset": 46
+                }
+              ],
+              "location": "step_definitions.SauceDemoLogin.i_enter_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 73976900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click on the login button",
+            "match": {
+              "location": "step_definitions.SauceDemoLogin.i_click_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I should not be in the home page",
+            "match": {
+              "location": "step_definitions.SauceDemoLogin.i_should_not_be_in_the_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 38987700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "There should an error message \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
+                  "offset": 30
+                }
+              ],
+              "location": "step_definitions.SauceDemoLogin.there_should_an_error_message(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@SauceInvalidLogin"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Sauce Demo login tests",
+    "description": "",
+    "id": "sauce-demo-login-tests",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SauceDemo.feature",
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-17T04:48:01.872Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1679583200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "As a user, I should be able to log my trade",
+        "description": "",
+        "id": "add-trade;as-a-user--i-should-be-able-to-log-my-trade",
+        "after": [
+          {
+            "result": {
+              "duration": 1027537800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2547716500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the app log in page",
+            "match": {
+              "location": "step_definitions.AddTrade.I_am_on_the_app_log_in_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 165946000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter valid username \"helil\" and password \"SuperHelil123!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"helil\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"SuperHelil123!\"",
+                  "offset": 44
+                }
+              ],
+              "location": "step_definitions.AddTrade.i_enter_valid_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28822599000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on trade signin button",
+            "match": {
+              "location": "step_definitions.AddTrade.i_click_on_trade_signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 77974700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should be in the trade homepage",
+            "match": {
+              "location": "step_definitions.AddTrade.i_should_be_in_the_trade_homepage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 283785000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click on Add Trade button",
+            "match": {
+              "location": "step_definitions.AddTrade.i_click_on_add_trade_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 69761100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should be on Save Trade Form",
+            "match": {
+              "location": "step_definitions.AddTrade.i_should_be_on_save_trade_form()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 454876400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I select \"Buy to Open\" and enter symble \"TSLA\" entrydate \"06/01/2021\" entryprice \"590\" exitdate \"06/10/2021\" exitprice \"600\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Buy to Open\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"TSLA\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"06/01/2021\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"590\"",
+                  "offset": 81
+                },
+                {
+                  "val": "\"06/10/2021\"",
+                  "offset": 96
+                },
+                {
+                  "val": "\"600\"",
+                  "offset": 119
+                }
+              ],
+              "location": "step_definitions.AddTrade.i_select_and_enter_symble_entrydate_entryprice_exitdate_exitprice(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2563593100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click save button",
+            "match": {
+              "location": "step_definitions.AddTrade.i_click_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1437501200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the trade is displayed in the trade table",
+            "match": {
+              "location": "step_definitions.AddTrade.the_trade_is_displayed_in_the_trade_table()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@addTrade"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@UpdateTrade"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T04:48:41.058Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2048837300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "As a user, I should be able to log my trade",
+        "description": "",
+        "id": "add-trade;as-a-user--i-should-be-able-to-log-my-trade",
+        "after": [
+          {
+            "result": {
+              "duration": 982651100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2571813000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I am on the app log in page",
+            "match": {
+              "location": "step_definitions.AddTrade.I_am_on_the_app_log_in_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 221446200,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I enter valid username \"helil\" and password \"SuperHelil123!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"helil\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"SuperHelil123!\"",
+                  "offset": 44
+                }
+              ],
+              "location": "step_definitions.AddTrade.i_enter_valid_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3994899400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I click on trade signin button",
+            "match": {
+              "location": "step_definitions.AddTrade.i_click_on_trade_signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71961300,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I should be in the trade homepage",
+            "match": {
+              "location": "step_definitions.AddTrade.i_should_be_in_the_trade_homepage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 308947500,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click on Add Trade button",
+            "match": {
+              "location": "step_definitions.AddTrade.i_click_on_add_trade_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 79975300,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I should be on Save Trade Form",
+            "match": {
+              "location": "step_definitions.AddTrade.i_should_be_on_save_trade_form()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 522236200,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I enter following trade details",
+            "match": {
+              "location": "step_definitions.AddTrade.i_enter_following_trade_details(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Buy to Open",
+                  "AMZN",
+                  "06/01/2021",
+                  "601",
+                  "06/10/2021",
+                  "622"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2805244600,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I click save button",
+            "match": {
+              "location": "step_definitions.AddTrade.i_click_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1423652300,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "the trade is displayed in the trade table",
+            "match": {
+              "location": "step_definitions.AddTrade.the_trade_is_displayed_in_the_trade_table()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@addTradeWithDatatable"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@UpdateTrade"
+          }
+        ]
+      }
+    ],
+    "name": "Add Trade",
+    "description": "  User is able to add delete edit the trade logs",
+    "id": "add-trade",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/TradeAppAddTrade.feature",
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
