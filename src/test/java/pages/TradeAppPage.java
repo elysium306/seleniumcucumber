@@ -1,6 +1,5 @@
 package pages;
 
-
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
@@ -59,5 +58,4 @@ public class TradeAppPage {
 	
 	@FindBy (xpath="//table[@class='table table-bordered table-striped']/tbody/tr/td")
 	public List<WebElement> searchTableFirstRow;
-
 }

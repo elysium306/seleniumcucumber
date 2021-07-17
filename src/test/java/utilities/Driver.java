@@ -2,6 +2,7 @@ package utilities;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -40,9 +41,15 @@ public class Driver {
 				driver = new SafariDriver();
 				break;
 			case "chrome":
-			default:
 				ChromeDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
+				break;
+			case "headless":
+			default:
+				ChromeDriverManager.chromedriver().setup();
+				ChromeOptions options = new ChromeOptions();
+				options.addArguments("--headless");
+				driver = new ChromeDriver(options);
 			}
 		}
 		return driver;

@@ -1,0 +1,18 @@
+{
+    "id": 333444,
+    "category": {
+        "id": 2,
+        "name": "cat"
+    },
+    "name": "meow",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+        {
+            "id": 12,
+            "name": "meow"
+        }
+    ],
+    "status": "available"
+}
