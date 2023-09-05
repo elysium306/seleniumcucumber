@@ -1,22 +1,5 @@
 package apt_tests;
 
-import static org.testng.Assert.assertEquals;
-
-import java.io.File;
-import java.net.Authenticator.RequestorType;
-import java.util.Iterator;
-import java.util.List;
-
-import org.testng.annotations.Test;
-
-import static io.restassured.RestAssured.*;
-import io.restassured.http.ContentType;
-import io.restassured.response.Response;
-import okhttp3.RequestBody;
-
-import static org.hamcrest.Matchers.*;
-
-
 import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
 

@@ -2,13 +2,14 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>sdet</groupId>
-	<artifactId>seleniumCucumberProject</artifactId>
+	<groupId>com.selenium.cucumber</groupId>
+	<artifactId>SeleniumCucumberFramework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-		<maven.compiler.source>8</maven.compiler.source>
-		<maven.compiler.target>8</maven.compiler.target>
+		<java-version>16</java-version>
+		<maven.compiler.source>${java-version}</maven.compiler.source>
+		<maven.compiler.target>${java-version}</maven.compiler.target>
 	</properties>
 
 	<dependencies>
@@ -17,7 +18,7 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>3.141.59</version>
+			<version>4.12.0</version>
 		</dependency>
 
 		<!-- 2 -->
@@ -47,15 +48,17 @@
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>4.4.3</version>
+			<version>5.3.2</version>
 		</dependency>
 
-		<!-- 6 -->
+		<!-- 11 -> 15 -->
+		<!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc11 -->
 		<dependency>
 			<groupId>com.oracle.database.jdbc</groupId>
-			<artifactId>ojdbc8</artifactId>
-			<version>21.1.0.0</version>
+			<artifactId>ojdbc11</artifactId>
+			<version>23.2.0.0</version>
 		</dependency>
+
 
 		<!-- 7 -->
 		<dependency>
@@ -68,7 +71,7 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>7.4.0</version>
+			<version>7.8.0</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -76,7 +79,7 @@
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
-			<version>4.4.0</version>
+			<version>5.3.1</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -91,7 +94,7 @@
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-api</artifactId>
-			<version>5.8.0-M1</version>
+			<version>5.10.0</version>
 			<scope>test</scope>
 		</dependency>
 
